@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var path = require("path");
-var port = process.env.PORT || 8000;
+const port = process.env.PORT || 8000;
 //controllers
 var schoolController = require("./controllers/schoolController");
 
@@ -15,7 +15,7 @@ app.use("/api", schoolController);
 // app.listen(7777, function () {
 //     console.log("Started listening on port", 7777);
 // });
-server.listen(port, function() {
+server.listen(port, () => {
     console.log("App is running on port " + port);
 });
 
