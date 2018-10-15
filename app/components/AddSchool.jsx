@@ -6,7 +6,7 @@ module.exports = React.createClass({
       return {
           name:"",
           tagline:""
-      }  
+      }
     },
     addSchool:function(e){
         e.preventDefault();
@@ -21,14 +21,14 @@ module.exports = React.createClass({
     },
     render:function(){
         return(
-            <form className="form" onSubmit={this.addSchool}>
+            <form className="form container" onSubmit={this.addSchool}>
                 <div className="form-group">
                     <label className="control-label" htmlFor="name">School Name:</label>
-                    <input type="text" className="form-control" id="name" name="name" value={this.state.name} onChange={this.handleInputChange} placeholder="School Name" />                    
+                    <input type="text" className="form-control" id="name" name="name" value={this.state.name} onChange={this.handleInputChange} placeholder="School Name" />
                 </div>
                 <div className="form-group">
                     <label className="control-label" htmlFor="tagline">Tagline:</label>
-                    <input type="text" className="form-control" id="tagline" name="tagline" value={this.state.address} onChange={this.handleInputChange} placeholder="Tagline" />                    
+                    <input type="text" className="form-control" id="tagline" name="tagline" value={this.state.address} onChange={this.handleInputChange} placeholder="Tagline" />
                 </div>
                 <div className="form-group">
                     <button className="btn" type="submit">Add School</button>
