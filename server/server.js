@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var path = require("path");
 const port = process.env.PORT || 8000;
+let server = require('http').Server(app);
 //controllers
 var schoolController = require("./controllers/schoolController");
 
