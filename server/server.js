@@ -12,7 +12,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, "../app/dist")));
 app.use(bodyParser.json())
 app.use("/api", schoolController);
-app.get('/index.html', (req, res)=>{
+app.get('/', (req, res)=>{
     res.render('index', { user : req.user});
   })
 app.listen(7777, function () {
