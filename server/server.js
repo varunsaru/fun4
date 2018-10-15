@@ -16,4 +16,4 @@ app.listen(7777, function () {
     console.log("Started listening on port", 7777);
 });
 
-mongoose.connect("mongodb://localhost/schoolfinder");
+mongoose.connect("mongodb://Sarangan:saru0528-@ds133113.mlab.com:33113/schoolfinder");
