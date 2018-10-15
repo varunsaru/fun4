@@ -11,7 +11,7 @@ var schoolController = require("./controllers/schoolController");
 var app = express();
 app.use(express.static(path.join(__dirname, "./app/dist")));
 app.use(bodyParser.json())
-app.use("/api", schoolController);
+app.use("/app", schoolController);
 
 app.listen(port, function () {
     console.log("Started listening on port", 7777);
